@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
     <ul> 
-        <li> prograd </li>
-        <li>
+        <li class="logo">Prograd</li>
             <ul>
-                <li>Home</li>
-                <li>bio</li>
-                <li>portfolio</li>
-                <li>skills</li>
-                <li>contact</li>
+                <li><a href="#Home" class="nav-link">HOME</a></li>
+                <li><a href="#Bio" class="nav-link">BIO</a></li>
+                <li><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
+                <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                <li><a href="#contact" class="nav-link link-button">CONTACT</a></li>
             </ul>
-        </li>
     </ul>
    </nav>
-   <header>
+   <header id="Home">
        <div>
-       <P>I BELIEVE IN </P>
+       <P class="pk">I BELIEVE IN </P>
        <h1>EAT(); SLEEP(); CODE(); REPAT();</h1>
        </div>
    </header>
-   <section>
-       <img src=""alt="photo">
+   <section id="Bio">
+       <img src="asserts\image.jpg"alt="photo">
        <article>
-           <h2>PROGRAD 007</h2>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime adipisci, officiis cumque exercitationem nihil corporis voluptatum minus consequuntur consectetur quibusdam laudantium excepturi ipsa iste alias eaque a perferendis voluptates odio.</p>
-            <a href="url">go to my resume</a>
+           <h2>PALANI KUMAR</h2>
+           <p>I am a passionate engineer with degree in Electrial and Electronics Engineering.
+                My very first experience with code was at the time when I started my own blog.
+                My struggle to customize the blog pages introduced to me to HTML ,CSS. Sooner, the excitement of having power to structure pages on my own sounded amazing and that's when i decided to pursue Web development.
+               <span class="break"></span>
+            Recently, I have taken up Full Stack development Program with FACE. I have a knowledge of HTML,CSS,JAYASCRIPT,C,C++,PYTHON AND DATA STRUCTURE. Rational thought process and goal oriented planning are my strengths.
+               <span class="break"></span>
+            I am currently on look out for a challenging role to build products that makes difference.</p>
+            <a href="url" class="link-button">go to my resume</a>
         </article>
    </section>
-   <section>
-       <h3>portfolio</h3>
+   <section id="portfolio">
+       <h3>PORTFOLIO</h3>
        <p>some of my best project so for</p>
        <hr>
        <div>
@@ -47,7 +52,7 @@
             <article>
                 <img src="https://i1.faceprep.in/ProGrad/Coding-icon.svg" alt="">
        <h4>TIC TAC TOE</h4>
-       <p>complete Tic Tac Toe game along with GUI java</p>
+       <p>Complete Tic Tac Toe game along with GUI java</p>
             </article>
             <article>
                 <img src="https://i1.faceprep.in/ProGrad/Coding-icon.svg" alt="">
@@ -56,62 +61,61 @@
             </article>
        </div>
    </section>
-   <section>
-       <h3>skills</h3>
-       <div>
-           <div>
-               <h4>Technical skills</h4>
-              <ul>
-                  <li>HTML</li>
-                  <li>
-                      <progess> </progess>
-                  </li>
-                  <li>CSS</li>
-                  <li>
-                    <progess> </progess>
-                  </li>
-                  <li>JS</li>
-                  <li>
-                    <progess> </progess>
-                  </li>
-                  <li>ANGULAR</li>
-                  <li>
-                    <progess> </progess>
-                  </li>
-                  <li>JAVA</li>
-                  <li>
-                    <progess> </progess>
-                  </li>
-              </ul>
-           </div>
-           <div>
-               <h4>Languages</h4>
+   <section id="skills"> 
+       <h3>SKILLS</h3>
+       <div id="skills-container">
+        <div>
+            <h4>Technical skills</h4> <div>
+                <ul>
+                    <li>HTML</li>
+                    <li>
+                        <progress max="100" value="80"> </progress>
+                    </li>
+                    <li>CSS</li>
+                    <li>
+                      <progress max="100" value="80"> </progress>
+                    </li>
+                    <li>JS</li>
+                    <li> <progress max=100 value=80></progress>
+                    </li>
+                    <li>ANGULAR</li>
+                    <li>
+                      <progress max=100 value=70> </progress>
+                    </li>
+                    <li>JAVA</li>
+                    <li>
+                      <progress max=100 value=80> </progress>
+                    </li>
+                </ul>
+            </div>  </div>
+        <div>
+            <h4>Languages</h4> <div>
                <ul>
                    <li>TAMIL</li>
                    <li>
-                    <progess></progess>
+                    <progress max=100 value=80></progress>
                    </li>
                    <li>ENGLISH</li>
-                   <li><progess> </progess></li>
+                   <li><progress max="100" value="80"></progress></li>
                    <li>HINDI</li>
                    <li>
-                    <progess> </progess>
+                    <progress max=100 value=80> </progress>
                    </li>
                    <li>MALAYALAM</li>
                    <li>
-                    <progess> </progess>
+                    <progress max=100 value=80> </progress>
                    </li>
                </ul>
-           </div>
-       </div>
-   </section>
-   <footer>
+            </div>
+        </div> </div>
+    </section>
+   <footer id="contact">
        <h3>CONTACT</h3>
        <form action="">
-           <input type="text"placeholder="ENTER YOUR NAME">
-           <input type="text"placeholder="ENTER YOUR EMAIL">
-           <input type="text"placeholder="ENTER YOUR MESSAGE">
-           <input type="button" value="SEND MESSAGE">
+           <input class="input" type="text"placeholder="ENTER YOUR NAME">
+           <input class="input" type="text"placeholder="ENTER YOUR EMAIL">
+           <input class="input" type="text"placeholder="ENTER YOUR MESSAGE">
+           <input type="button" class="link-button" value="SEND MESSAGE">
        </form>
    </footer>
 </body>
